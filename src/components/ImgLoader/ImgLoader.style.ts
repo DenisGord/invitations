@@ -2,11 +2,12 @@ import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
 interface Props {
-    uri: string
-    size?: string
+  uri: string
+  size?: string
+  justifyContent: string
 }
 
-export const ImgLoaderStyle = styled.div<Props>(({ uri, size }) => `
+export const ImgLoaderStyle = styled.div<Props>(({ uri, size, justifyContent }) => `
 max-width:100vw;
 height:100vh;
 background-image: url(${uri});
@@ -15,12 +16,12 @@ background-repeat: no-repeat;
 background-size:cover;
 display:flex;
 align-items:center;
-justify-content:flex-end;
+justify-content: ${justifyContent};
 color:white;
 flex-direction:column;
 h1{
-    font-size: ${size};
-}
+    font-size: ${size}; 
+  } 
 `)
 
 export const WhiteBackground = styled.div(() => css`
@@ -82,3 +83,27 @@ h1{
  
 
 `)
+
+export const RectangleStyled = styled.div`
+  width:75%;
+  height: 70vh;
+  background: white;
+  color:black;
+  padding:20px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around;
+
+  h1{
+    font-size:60px;
+    position: relative;
+    border-bottom: 1px solid black;
+  }
+
+  a{
+    color:gray;
+    text-decoration:none;
+    border-bottom: 1px solid gray;
+  }
+`

@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap);
+
 @font-face {
 	font-family: 'MyFonts';
 	src: local('MyFonts'), url('./fonts/MyFonts.ttf') format('truetype');
@@ -32,6 +34,13 @@ h1{
 
 svg {
 	display: block;
+}
+
+span{
+	font-size:40px;
+	overflow-wrap: break-word;
+	line-height: 1.5;
+	text-align:center;
 }
 
 .app{
