@@ -19,7 +19,7 @@ export const Program = () => {
       <div>
         <h2>18.00 </h2>
         <span>
-          Банкет <br /> Кокурсы <br /> Свадебный Торт <br /> Танцы
+          Банкет <br /> Кокурсы <br /> Танцы
         </span>
       </div>
     </ProgramStyle>

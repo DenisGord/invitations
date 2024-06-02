@@ -27,7 +27,7 @@ h1{
 export const WhiteBackground = styled.div(() => css`
 width:99vw;
 height:60vh;
-background-image: url('https://4.downloader.disk.yandex.ru/preview/82acc0aa9a21acd4f140895f7c23e8913414cbc82db182304b8b9001d01b1b7c/inf/M_k4FcaOhzgOgBlMzRo-DwJVoHCir8vPR_Z_7W_6YOmO4bGPtBfZ8jVS2aBXzMDV8_Pyo5y2Fcmyjw1qU9xgPg%3D%3D?uid=610905121&filename=1645743356_3-abrakadabra-fun-p-rvanii-krai-4.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=610905121&tknv=v2&size=1835x966');
+background-image: url('/../../static/images/white.png');
 background-position: center center;
 background-repeat: no-repeat;
 background-size:cover;
@@ -36,46 +36,6 @@ align-items:center;
 justify-content:flex-end;
 color:black;
 flex-direction:column;
-
-@keyframes move{
-    from{
-        opacity:0;
-        margin-left:-200px;
-    }
-    to{
-        opacity:1;
-        margin-left:10px;
-    }
-}
-
-@keyframes moveAnd{
-    from{
-        opacity:0;
-        margin-left: 200px;
-    }
-    to{
-        opacity:1;
-        margin-left:0;
-    }
-}
-
-
-
-h1{
-    animation-direction: alternate;
-	animation-duration: 2s;
-	animation-name: moveAnd;
-	animation-iteration-count: 1;
-	animation-timing-function: linear;
-  }
-
-  h2{
-    animation-direction: alternate;
-	animation-duration: 2s;
-	animation-name: move;
-	animation-iteration-count: 1;
-	animation-timing-function: linear;
-  }
 
 @media only screen and (max-width: 600px) {
     max-width:100vw;
@@ -86,7 +46,7 @@ h1{
 
 export const RectangleStyled = styled.div`
   width:75%;
-  height: 70vh;
+  min-height: 70vh;
   background: white;
   color:black;
   padding:20px;
@@ -94,6 +54,7 @@ export const RectangleStyled = styled.div`
   flex-direction:column;
   align-items:center;
   justify-content:space-around;
+  opacity:0.85;
 
   h1{
     font-size:60px;
@@ -105,5 +66,46 @@ export const RectangleStyled = styled.div`
     color:gray;
     text-decoration:none;
     border-bottom: 1px solid gray;
+  }
+
+  .long-text{
+    font-size:24px;
+  }
+
+`
+export const DeatGuestStyled = styled.div`
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  flex-direction:column;
+  text-aligin:center;
+  height:100%;
+  padding-top:30px;
+  h2{
+    color:black;
+    text-align:center;
+  }
+
+`
+
+export const FlexConteiner = styled.div`
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width:100%;
+  text-align:center;
+
+  button{
+    background:white;
+    border:1px solid black;
+    outline: none;
+    border-radius:10px;
+    font-family:"MyFonts";
+    width:48%;
+    padding:10px;
+    font-size:15px;
+  }
+  a{
+    font-size:20px
   }
 `

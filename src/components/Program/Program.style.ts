@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const ProgramStyle = styled.div`
     width:100vw;
-    height:calc(100vh - 40px);
+    min-height:calc(100vh - 40px);
     padding:20px 0px;
     display:flex;
     flex-direction:column;
